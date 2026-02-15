@@ -7,7 +7,7 @@ import os
 # Hugging Face के Secrets से API Key उठावल जाई
 api_key = os.getenv("GEMINI_API_KEY")
 genai.configure(api_key=api_key)
-model = genai.GenerativeModel('gemini-1.5-pro')
+model = genai.GenerativeModel('gemini-pro')
 
 st.set_page_config(page_title="NEET Sathi AI", page_icon="🩺")
 st.title("🩺 NEET Sathi: Batch Planner")
